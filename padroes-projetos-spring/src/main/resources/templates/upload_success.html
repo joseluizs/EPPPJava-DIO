@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Successful</title>
+</head>
+<body>
+<h1>Upload Successful</h1>
+<ul>
+    <li th:each="fileName : ${fileNames}" th:text="${fileName}"></li>
+</ul>
+</body>
+</html>

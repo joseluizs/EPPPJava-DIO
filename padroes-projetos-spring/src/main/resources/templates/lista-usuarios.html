@@ -1,0 +1,26 @@
+<!-- upload_form.html para pesquisar -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pesquisar Usuário</title>
+</head>
+<body>
+<h1>Pesquisar Usuário</h1>
+<form th:action="@{/usuarios/pesquisar}" method="get">
+    <label for="pesquisa">Pesquisar:</label>
+    <input type="text" id="pesquisa" name="pesquisa" required />
+    <button type="submit">Pesquisar</button>
+</form>
+</body>
+</html>
+
+<tr th:each="usuario : ${usuarios}">
+        <td th:text="${usuario.id}"></td>
+        <td th:text="${usuario.nome}"></td>
+        <td th:text="${usuario.email}"></td>
+        <!-- Adicione mais colunas conforme necessário -->
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
